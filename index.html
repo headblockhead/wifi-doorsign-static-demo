@@ -157,8 +157,8 @@
         ctx.fillRect(0, 0, width, height);
         ctx.drawImage(img, 0, 0, width, height);
         ctx.font = '288px Ubuntu Mono';
-        ctx.fillStyle = "#" + textBrightness.toString(16).repeat(3) + "ff";
-        ctx.strokeStyle = "#" + outlineBrightness.toString(16).repeat(3) + "ff";
+        ctx.fillStyle = "#" + textBrightness.toString(16).padStart(2,"0").repeat(3) + "ff";
+        ctx.strokeStyle = "#" + outlineBrightness.toString(16).padStart(2,"0").repeat(3) + "ff";
         ctx.globalCompositeOperation = 'luminosity';
         ctx.fillText(text, 300 - ctx.measureText(text).width / 2, 448 - 144);
         ctx.font = '50px Ubuntu Mono';
