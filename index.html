@@ -190,17 +190,18 @@
           cha |= ind2;
           textify += String.fromCharCode(cha);
         }
+        alert("This is a demo, pushing does not function as there is no physical screen to push to. However, I can run the progress bar for you!");
         document.getElementById('progress').value = 0;
         document.getElementById('progress').style.accentColor = "auto";
 				setTimeout(function() {
 					document.getElementById('progress').value = 50;
-				}, 500);
+				}, 250);
 				setTimeout(function() {
           document.getElementById('progress').value = 100;
           document.getElementById('progress').style.accentColor = "green";
           updateImage(document.getElementById('img'));
           document.getElementById('push_button').blur();
-        }, 1000);
+        }, 750);
       }
 
       function addVal(c, r, g, b, k) {
